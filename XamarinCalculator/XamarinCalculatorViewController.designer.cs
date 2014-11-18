@@ -20,6 +20,10 @@ namespace XamarinCalculator
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton Clear { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton Divided { get; set; }
 
 		[Outlet]
@@ -82,11 +86,19 @@ namespace XamarinCalculator
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton Zero { get; set; }
 
+		[Action ("Clear_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void Clear_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (Calculator != null) {
 				Calculator.Dispose ();
 				Calculator = null;
+			}
+			if (Clear != null) {
+				Clear.Dispose ();
+				Clear = null;
 			}
 			if (Divided != null) {
 				Divided.Dispose ();

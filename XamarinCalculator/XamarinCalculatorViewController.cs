@@ -197,6 +197,18 @@ namespace XamarinCalculator
 			number2 = Convert.ToDouble (two);
 			return number1 - number2;
 		}
+
+		partial void Clear_TouchUpInside (UIButton sender)
+		{
+			Screen.Text = string.Empty;
+			Firstinput = string.Empty;
+			Secondinput = string.Empty;
+			choice = false;
+			div = false;
+			plus = false;
+			mult = false;
+			sub = false;
+		}
 	}
 }
 
